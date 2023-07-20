@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="el">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Συναρτήσεις (Functions) | Excel: Υπολογιστικά φύλλα </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="VoskopoulouMaria" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Παράλειψη περιήγησης</a></p>
+<header id="header" ><div id="headerContent">Excel: Υπολογιστικά φύλλα</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Excel: Υπολογιστικά Φύλλα</a></li>
+   <li><a href="__.html" class="no-ch">Στόχοι του μαθήματος</a></li>
+   <li><a href="__0.html" class="no-ch">Επισκόπηση</a></li>
+   <li><a href="___.html" class="no-ch">Εύρεση και επιλογή κελιού</a></li>
+   <li><a href="__1.html" class="no-ch">Αντικατάσταση περιεχομένου κελιού</a></li>
+   <li><a href="__2.html" class="daddy">Σύνταξη</a>
+   <ul class="other-section">
+      <li><a href="_.html" class="no-ch">Πρόσθεση κελιών</a></li>
+   </ul>
+   </li>
+   <li><a href="excel__formulas.html" class="daddy">Excel: Μαθηματικοί Τύποι(Formulas)</a>
+   <ul class="other-section">
+      <li><a href="__3.html" class="no-ch">Τελεστές</a></li>
+      <li><a href="___0.html" class="no-ch">Απόλυτες και σχετικές αναφορές</a></li>
+      <li><a href="_0.html" class="no-ch">Αριθμητικές πράξεις</a></li>
+   </ul>
+   </li>
+   <li><a href="__excel.html" class="no-ch">Σχεδίαση περιβάλλοντος Excel</a></li>
+   <li id="active"><a href="_functions.html" class="active daddy">Συναρτήσεις (Functions)</a>
+   <ul>
+      <li><a href="_1.html" class="no-ch">Συναρτήσεις συμβολοσειρών</a></li>
+      <li><a href="_2.html" class="no-ch">Λογικές συναρτήσεις</a></li>
+   </ul>
+   </li>
+   <li><a href="_3.html" class="no-ch">Ανάλυση δεδομένων</a></li>
+   <li><a href="__4.html" class="no-ch">Ομάδες και υποσύνολα</a></li>
+   <li><a href="__5.html" class="no-ch">Πίνακες και γραφήματα</a></li>
+   <li><a href="pivot_tables__charts.html" class="no-ch">Pivot tables &amp; charts</a></li>
+   <li><a href="__6.html" class="no-ch">Προχωρημένα εργαλεία δεδομένων</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="__excel.html" class="prev"><span><span>&laquo; </span>Προηγούμενο</span></a> <span class="sep">| </span><a href="_1.html" class="next"><span>Επόμενο<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Συναρτήσεις (Functions)</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_list" id="id15">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_list.png)"><h1 class="iDeviceTitle">Γενικές πληροφορίες</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta15_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Υπάρχει μεγάλο πλήθος συναρτήσεων. Οι συναρτήσεις συντάσσονται με πρώτο σύμβολο το ίσον(=). Ακολουθούνται από το όνομα της συνάρτησης και τα ορίσματα που βρίσκονται σε παρένθεση αμέσως μετά.</p>
+<p>Τα ορίσματα μπορούν να είναι αριθμοί, ονόματα κελιών αλλά και συναρτήσεις. Υπάρχει και η περίπτωση των συναρτήσεων που δεν έχουν όρισμα. </p>
+<p>Επιστρεφόμενη καλείται η τιμή που επιστρέφεται από τις συναρτήσεις.</p>
+<p>Ιδιαίτερη προσοχή: Το όνομα της συνάρτησης πρέπει να γράφεται πάντα με λατινικούς χαρακτήρες και τα ορίσματα να γράφονται ανάλογα με την σύνταξη που ορίζεται για την εκάστοτε συνάρτηση. </p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_plus" id="id18">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_plus.png)"><h1 class="iDeviceTitle">Παραδείγματα συναρτήσεων</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta18_123_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-fx exe-accordion">
+<h2>SUM</h2>
+<p>Επιστρέφει το άθροισμα των ορισμάτων</p>
+<h2>ABS</h2>
+<p>Επιστρέφει την απόλυτη τιμή του ορίσματος </p>
+<h2>SQRT</h2>
+<p>Επιστρέφει την τετραγωνική ρίζα του ορίσματος </p>
+<h2>FACT</h2>
+<p>Υπολογίζει το παραγοντικό του ορίσματος</p>
+<h2>AVERAGE</h2>
+<p>Υπολογίζει τον μέσο όρο των ορισμάτων</p>
+<h2>MAX</h2>
+<p>Επιστρέφει το μέγιστο των ορισμάτων </p>
+<h2>MIN</h2>
+<p>Επιστρέφει το ελάχιστο των ορισμάτων </p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id29">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Συμπλήρωση κενών</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta29_116" class="block instructions iDevice_content">
+Διαβάστε την παράγραφο που ακολουθεί και συμπληρώστε τις λέξεις που λείπουν.
+</section>
+
+    <section class="activity" id="activity-29_117"><form name="cloze-form-29_117" action="#" class="activity-form cloze-activity-form"><div id="cloze29_117"><input type="hidden" name="clozeFlag29_117.strictMarking" id="clozeFlag29_117.strictMarking" value="false"/>
+<input type="hidden" name="clozeFlag29_117.checkCaps" id="clozeFlag29_117.checkCaps" value="true"/>
+<input type="hidden" name="clozeFlag29_117.instantMarking" id="clozeFlag29_117.instantMarking" value="false"/>
+<input type="hidden" name="clozeVar29_117.feedbackId" id="clozeVar29_117.feedbackId" value="ta29_118"/>
+<p>Οι συναρτήσεις συντάσσονται με πρώτο σύμβολο το <label for="clozeBlank29_117.0" class="sr-av">Συμπλήρωση κενών (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank29_117.0" style="width:4ch" /><span style="display:none" id="clozeAnswer29_117.0">JXUwM2Y3JXUwMDZjJXUwMDdjJXUwMDAy
+</span>. Ακολουθούνται από το όνομα της συνάρτησης και τα ορίσματα που βρίσκονται σε <label for="clozeBlank29_117.1" class="sr-av">Συμπλήρωση κενών (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank29_117.1" style="width:9ch" /><span style="display:none" id="clozeAnswer29_117.1">JXUwMzk4JXUwMDcxJXUwMDcwJXUwMDZjJXUwMDEwJXUwMDA1JXUwMDBkJXUwMDc2JXUwMDc0
+</span>αμέσως μετά.</p>
+<p>Τα ορίσματα μπορούν να είναι <label for="clozeBlank29_117.2" class="sr-av">Συμπλήρωση κενών (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank29_117.2" style="width:7ch" /><span style="display:none" id="clozeAnswer29_117.2">JXUwM2U5JXUwMDcwJXUwMDc4JXUwMDAxJXUwMDA0JXUwMDAzJXUwMDEw
+</span>, ονόματα κελιών αλλά και συναρτήσεις. Υπάρχει και η περίπτωση των συναρτήσεων που δεν έχουν όρισμα. </p>
+<p><label for="clozeBlank29_117.3" class="sr-av">Συμπλήρωση κενών (4):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank29_117.3" style="width:13ch" /><span style="display:none" id="clozeAnswer29_117.3">JXUwM2NkJXUwMDU1JXUwMDc5JXUwMDdhJXUwMDA3JXUwMDA1JXUwMDc0JXUwMDczJXUwMDBhJXUw
+MDcwJXUwMDA5JXUwMDA4JXUwMDBh
+</span>καλείται η τιμή που επιστρέφεται από τις συναρτήσεις.</p>
+<p>Ιδιαίτερη προσοχή: Το όνομα της συνάρτησης πρέπει να γράφεται πάντα με <label for="clozeBlank29_117.4" class="sr-av">Συμπλήρωση κενών (5):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank29_117.4" style="width:10ch" /><span style="display:none" id="clozeAnswer29_117.4">JXUwM2UzJXUwMDBhJXUwMDc1JXUwMDdkJXUwMDA0JXUwMDA0JXUwMDAzJXUwMDA1JXUwMDcyJXUw
+MDBm
+</span>χαρακτήρες και τα ορίσματα να γράφονται ανάλογα με την σύνταξη που ορίζεται για την εκάστοτε συνάρτηση.</p><div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit29_117" value="Υποβολή"  id="submit29_117" />
+<input type="button" name="restart29_117" value="Επανεκκίνηση" style="display:none" id="restart29_117" onclick="$exe.cloze.restart('29_117')" />
+ <input type="button" name="29_117showAnswersButton" value="Εμφάνιση Απαντήσεων" style="display:none" id="showAnswersButton29_117" onclick="$exe.cloze.fillInputs('29_117')" />
+<span class="js-hidden js-warning">Ενεργοποίηση JavaScript</span></p></div><div id="clozeScore29_117"></div></div></form></section>
+    <section id="ta29_118" class="feedback js-feedback iDevice_content" style="display:none">
+<p>Σωστά!</p>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Αδειοδοτημένο υπό τους όρους</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Αναφορά Δημιουργού - Παρόμοια Διανομή 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="__excel.html" class="prev"><span><span>&laquo; </span>Προηγούμενο</span></a> <span class="sep">| </span><a href="_1.html" class="next"><span>Επόμενο<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Δημιουργήθηκε με το eXeLearning<span> (Νέο παράθυρο)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

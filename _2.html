@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="el">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Λογικές συναρτήσεις | Excel: Υπολογιστικά φύλλα </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="VoskopoulouMaria" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Παράλειψη περιήγησης</a></p>
+<header id="header" ><div id="headerContent">Excel: Υπολογιστικά φύλλα</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Excel: Υπολογιστικά Φύλλα</a></li>
+   <li><a href="__.html" class="no-ch">Στόχοι του μαθήματος</a></li>
+   <li><a href="__0.html" class="no-ch">Επισκόπηση</a></li>
+   <li><a href="___.html" class="no-ch">Εύρεση και επιλογή κελιού</a></li>
+   <li><a href="__1.html" class="no-ch">Αντικατάσταση περιεχομένου κελιού</a></li>
+   <li><a href="__2.html" class="daddy">Σύνταξη</a>
+   <ul class="other-section">
+      <li><a href="_.html" class="no-ch">Πρόσθεση κελιών</a></li>
+   </ul>
+   </li>
+   <li><a href="excel__formulas.html" class="daddy">Excel: Μαθηματικοί Τύποι(Formulas)</a>
+   <ul class="other-section">
+      <li><a href="__3.html" class="no-ch">Τελεστές</a></li>
+      <li><a href="___0.html" class="no-ch">Απόλυτες και σχετικές αναφορές</a></li>
+      <li><a href="_0.html" class="no-ch">Αριθμητικές πράξεις</a></li>
+   </ul>
+   </li>
+   <li><a href="__excel.html" class="no-ch">Σχεδίαση περιβάλλοντος Excel</a></li>
+   <li class="current-page-parent"><a href="_functions.html" class="current-page-parent daddy">Συναρτήσεις (Functions)</a>
+   <ul>
+      <li><a href="_1.html" class="no-ch">Συναρτήσεις συμβολοσειρών</a></li>
+      <li id="active"><a href="_2.html" class="active no-ch">Λογικές συναρτήσεις</a></li>
+   </ul>
+   </li>
+   <li><a href="_3.html" class="no-ch">Ανάλυση δεδομένων</a></li>
+   <li><a href="__4.html" class="no-ch">Ομάδες και υποσύνολα</a></li>
+   <li><a href="__5.html" class="no-ch">Πίνακες και γραφήματα</a></li>
+   <li><a href="pivot_tables__charts.html" class="no-ch">Pivot tables &amp; charts</a></li>
+   <li><a href="__6.html" class="no-ch">Προχωρημένα εργαλεία δεδομένων</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="_1.html" class="prev"><span><span>&laquo; </span>Προηγούμενο</span></a> <span class="sep">| </span><a href="_3.html" class="next"><span>Επόμενο<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Λογικές συναρτήσεις</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_list" id="id19">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_list.png)"><h1 class="iDeviceTitle">Γενικές πληροφορίες</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta19_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Οι λογικές συναρτήσεις είναι τρεις: </p>
+<ul>
+<li>AND</li>
+<li>OR </li>
+<li>IF</li>
+</ul>
+<div class="exe-fx exe-tabs">
+<h2>AND</h2>
+<p>Παίρνει την τιμή TRUE μόνο στην περίπτωση που ισχύουν όλες οι συνθήκες, διαφορετικά παίρνει την τιμή FALSE.</p>
+<h2>OR</h2>
+<p>Παίρνει την τιμή TRUE αν έστω μία συνθήκη ισχύει, διαφορετικά παίρνει την τιμή FALSE. </p>
+<h2>IF</h2>
+<p>Περιλαμβάνει τρία ορίσματα:</p>
+<ol>
+<li>μία συνθήκη με τιμές αληθής ή ψευδής.</li>
+<li>μία πράξη σε περίπτωση που είναι αληθής η συνθήκη.</li>
+<li>μία πράξη σε περίπτωση που είναι ψευδής η συνθήκη</li>
+</ol>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id31">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Συμπλήρωση κενών από λίστα</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta31_131" class="block instructions iDevice_content">
+Ανάγνωση και συμπλήρωση
+</section>
+
+<section class="activity" id="activity-31_132">
+<form name="cloze-form-31_132" action="#" class="activity-form cloze-form">
+<div id="cloze31_132">
+<p>Οι λογικές συναρτήσεις είναι τρεις: </p>
+<p> 
+<label for="clozeBlank31_132.0" class="sr-av">Συμπλήρωση κενών (1):</label>
+<select id="clozeBlank31_132.0">
+<option selected="selected"> </option><option value="AND">AND</option><option value="ΝΟΤ ">ΝΟΤ </option>
+</select>
+<span style="display:none" id="clozeAnswer31_132.0">JXUwMDE5JXUwMDBmJXUwMDBh</span>
+ <br/>OR <br/>IF</p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore31_132" value="Έλεγχος"  id="getScore31_132" />
+
+<input type="hidden" name="clozeOtras31_132" id="clozeOtras31_132" value="JXUwM2M1JXUwMDAyJXUwMDNiJXUwMzg0"/>
+
+<input type="hidden" name="clozeFlag31_132.strictMarking" id="clozeFlag31_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag31_132.checkCaps" id="clozeFlag31_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag31_132.instantMarking" id="clozeFlag31_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Ενεργοποίηση JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore31_132"></div>
+</div>
+</form>
+</section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id35">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Συμπλήρωση κενών από λίστα</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta35_131" class="block instructions iDevice_content">
+Ανάγνωση και συμπλήρωση
+</section>
+
+<section class="activity" id="activity-35_132">
+<form name="cloze-form-35_132" action="#" class="activity-form cloze-form">
+<div id="cloze35_132">
+<p>Η λογική συνάρτηση IF περιλαμβάνει τρία ορίσματα:</p>
+<p>μία 
+<label for="clozeBlank35_132.0" class="sr-av">Συμπλήρωση κενών (1):</label>
+<select id="clozeBlank35_132.0">
+<option selected="selected"> </option><option value="συμβολοσειρά">συμβολοσειρά</option><option value="συνθήκη">συνθήκη</option>
+</select>
+<span style="display:none" id="clozeAnswer35_132.0">JXUwMzliJXUwMDA2JXUwMDc4JXUwMDA1JXUwMDE2JXUwMDE0JXUwMDBk</span>
+με τιμές αληθής ή ψευδής.<br/>μία πράξη σε περίπτωση που είναι αληθής η συνθήκη.<br/>μία πράξη σε περίπτωση που είναι ψευδής η συνθήκη</p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore35_132" value="Έλεγχος"  id="getScore35_132" />
+
+<input type="hidden" name="clozeOtras35_132" id="clozeOtras35_132" value="JXUwMzliJXUwMDA2JXUwMDc5JXUwMDBlJXUwMDBkJXUwMDA0JXUwMDA0JXUwMDdjJXUwMDc2JXUwMDBjJXUwMDc4JXUwMDZk"/>
+
+<input type="hidden" name="clozeFlag35_132.strictMarking" id="clozeFlag35_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag35_132.checkCaps" id="clozeFlag35_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag35_132.instantMarking" id="clozeFlag35_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Ενεργοποίηση JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore35_132"></div>
+</div>
+</form>
+</section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id36">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Συμπλήρωση κενών από λίστα</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta36_131" class="block instructions iDevice_content">
+Ανάγνωση και συμπλήρωση
+</section>
+
+<section class="activity" id="activity-36_132">
+<form name="cloze-form-36_132" action="#" class="activity-form cloze-form">
+<div id="cloze36_132">
+<p>Η λογική συνάρτηση AND παίρνει την τιμή TRUE μόνο στην περίπτωση που ισχύουν 
+<label for="clozeBlank36_132.0" class="sr-av">Συμπλήρωση κενών (1):</label>
+<select id="clozeBlank36_132.0">
+<option selected="selected"> </option><option value="μερικές ">μερικές </option><option value="όλες">όλες</option>
+</select>
+<span style="display:none" id="clozeAnswer36_132.0">JXUwMzk0JXUwMDc3JXUwMDBlJXUwMDc3</span>
+ οι συνθήκες, διαφορετικά παίρνει την τιμή FALSE.</p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore36_132" value="Έλεγχος"  id="getScore36_132" />
+
+<input type="hidden" name="clozeOtras36_132" id="clozeOtras36_132" value="JXUwM2U0JXUwMDA5JXUwMDc0JXUwMDc4JXUwMDAzJXUwMDE3JXUwMDZmJXUwM2Uy"/>
+
+<input type="hidden" name="clozeFlag36_132.strictMarking" id="clozeFlag36_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag36_132.checkCaps" id="clozeFlag36_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag36_132.instantMarking" id="clozeFlag36_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Ενεργοποίηση JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore36_132"></div>
+</div>
+</form>
+</section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Συμπλήρωση κενών από λίστα</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta37_131" class="block instructions iDevice_content">
+Ανάγνωση και συμπλήρωση
+</section>
+
+<section class="activity" id="activity-37_132">
+<form name="cloze-form-37_132" action="#" class="activity-form cloze-form">
+<div id="cloze37_132">
+<p>Η λογική συνάρτηση 
+<label for="clozeBlank37_132.0" class="sr-av">Συμπλήρωση κενών (1):</label>
+<select id="clozeBlank37_132.0">
+<option selected="selected"> </option><option value="OR">OR</option><option value="NOT">NOT</option>
+</select>
+<span style="display:none" id="clozeAnswer37_132.0">JXUwMDE3JXUwMDFk</span>
+ παίρνει την τιμή TRUE αν έστω μία συνθήκη ισχύει, διαφορετικά παίρνει την τιμή FALSE . </p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore37_132" value="Έλεγχος"  id="getScore37_132" />
+
+<input type="hidden" name="clozeOtras37_132" id="clozeOtras37_132" value="JXUwMDE2JXUwMDAxJXUwMDFi"/>
+
+<input type="hidden" name="clozeFlag37_132.strictMarking" id="clozeFlag37_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag37_132.checkCaps" id="clozeFlag37_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag37_132.instantMarking" id="clozeFlag37_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Ενεργοποίηση JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore37_132"></div>
+</div>
+</form>
+</section></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Αδειοδοτημένο υπό τους όρους</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Αναφορά Δημιουργού - Παρόμοια Διανομή 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="_1.html" class="prev"><span><span>&laquo; </span>Προηγούμενο</span></a> <span class="sep">| </span><a href="_3.html" class="next"><span>Επόμενο<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Δημιουργήθηκε με το eXeLearning<span> (Νέο παράθυρο)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
